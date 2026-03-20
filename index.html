@@ -3,31 +3,54 @@
 <head>
 <title>BappaBhakti.com</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body { font-family: Arial; margin:0; background:#fff5e6; }
 
-header { <nav style="background:#fff; padding:10px; text-align:center;">
-  <a href="#" style="margin:10px;">Home</a>
-  <a href="#" style="margin:10px;">Photos</a>
-  <a href="#" style="margin:10px;">Aarti</a>
-  <a href="#" style="margin:10px;">Contact</a>
-</nav>
+<style>
+body { 
+  font-family: Arial; 
+  margin:0; 
+  background:#fff5e6; 
+}
+
+/* Header */
+header { 
   background:#ff6600; 
   color:white; 
   padding:20px; 
   text-align:center; 
 }
 
+/* Navbar */
+nav {
+  background:white;
+  padding:10px;
+  text-align:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+nav a {
+  margin:10px;
+  text-decoration:none;
+  color:#ff6600;
+  font-weight:bold;
+}
+
+/* Banner */
+.banner img {
+  width:100%;
+  height:auto;
+}
+
+/* Section */
 section { padding:20px; }
 
+/* Grid */
 .grid {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap:15px;
 }
 
-.card {
-  <img src="https://i.ibb.co/6bQn6Fq/ganpati.jpg" width="100%">
+/* Card */
+.card { 
   background:white; 
   padding:15px; 
   border-radius:10px; 
@@ -35,16 +58,32 @@ section { padding:20px; }
   text-align:center;
 }
 
-button {<button onclick="alert('Coming Soon 🙏')">View</button>
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* Button */
+button {
   background:#ff6600;
   color:white;
   border:none;
   padding:8px 15px;
   border-radius:5px;
   cursor:pointer;
+  margin-top:10px;
 }
 
+/* Footer */
+footer {
+  background:#ff6600;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+}
 </style>
+
 </head>
 
 <body>
@@ -54,26 +93,62 @@ button {<button onclick="alert('Coming Soon 🙏')">View</button>
 <p>Ganpati Bappa Morya</p>
 </header>
 
+<nav>
+<a href="#">Home</a>
+<a href="#">Photos</a>
+<a href="#">Aarti</a>
+<a href="#">Videos</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="banner">
+<img src="https://i.ibb.co/6bQn6Fq/ganpati.jpg">
+</div>
+
 <section>
-<h2>Latest Posts</h2>
+<h2>🔥 Latest Posts</h2>
 
 <div class="grid">
 
 <div class="card">
+<img src="https://i.ibb.co/6bQn6Fq/ganpati.jpg">
 <h3>Ganpati HD Images</h3>
-<p>Download free images</p>
-<button>View</button>
+<p>Download beautiful Bappa images</p>
+<button onclick="alert('Coming Soon 🙏')">View</button>
 </div>
 
 <div class="card">
+<img src="https://i.ibb.co/6bQn6Fq/ganpati.jpg">
 <h3>Ganpati Captions</h3>
-<p>Copy paste captions</p>
-<button>View</button>
+<p>Best captions for Instagram</p>
+<button onclick="alert('Coming Soon 🙏')">View</button>
 </div>
 
+<div class="card">
+<img src="https://i.ibb.co/6bQn6Fq/ganpati.jpg">
+<h3>Aarti & Mantra</h3>
+<p>Read Ganpati Aarti</p>
+<button onclick="alert('Coming Soon 🙏')">View</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>📂 Categories</h2>
+
+<div class="grid">
+<div class="card">Ganpati Photos</div>
+<div class="card">Aarti</div>
+<div class="card">Status Videos</div>
+<div class="card">Captions</div>
 </div>
 
 </section>
+
+<footer>
+<p>© 2026 BappaBhakti.com | Ganpati Bappa Morya 🙏</p>
+</footer>
 
 </body>
 </html>
